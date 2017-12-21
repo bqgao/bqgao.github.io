@@ -1869,7 +1869,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c7b129;
+  background: #226755;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2630,6 +2630,9 @@ pre .javascript .function {
 }
 .page-post-detail .comments {
   overflow: hidden;
+}
+body {
+  background: url("/images/my.jpg");
 }
 h1,
 h2,
