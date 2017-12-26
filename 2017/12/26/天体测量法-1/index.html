@@ -98,22 +98,22 @@
 
 
 
-<meta name="description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $F{R \r">
+<meta name="description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是$F{R\rig">
 <meta name="keywords" content="CCD 图像">
 <meta property="og:type" content="article">
 <meta property="og:title" content="天体测量法">
 <meta property="og:url" content="http://yoursite.com/2017/12/26/天体测量法-1/index.html">
 <meta property="og:site_name" content="BQGao的博客">
-<meta property="og:description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $F{R \r">
+<meta property="og:description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是$F{R\rig">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2017/12/26/天体测量法-1/15141075149905.jpg">
 <meta property="og:image" content="http://yoursite.com/2017/12/26/天体测量法-1/15141889472305.jpg">
 <meta property="og:image" content="http://yoursite.com/2017/12/26/天体测量法-1/15142717029444.jpg">
 <meta property="og:image" content="http://yoursite.com/2017/12/26/天体测量法-1/15142725484851.jpg">
-<meta property="og:updated_time" content="2017-12-26T11:39:23.000Z">
+<meta property="og:updated_time" content="2017-12-26T11:58:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="天体测量法">
-<meta name="twitter:description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $F{R \r">
+<meta name="twitter:description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是$F{R\rig">
 <meta name="twitter:image" content="http://yoursite.com/2017/12/26/天体测量法-1/15141075149905.jpg">
 
 
@@ -340,27 +340,27 @@
         
           <h1 id="天体测量法"><a href="#天体测量法" class="headerlink" title="天体测量法"></a>天体测量法</h1><h2 id="交叉匹配法"><a href="#交叉匹配法" class="headerlink" title="交叉匹配法"></a>交叉匹配法</h2><p>找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。<strong>为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点</strong>。</p>
 <hr>
-<p>&emsp;&emsp; 在天文应用中一个更普遍的假设是 $F<em>{R \rightarrow I}$是一个相似变换，比如旋转、放大等，$ F</em>{R \rightarrow I}= \lambda A r + b $，矩阵 A 是正交矩阵的 $\lambda$ 倍，b 是平移转换，r 是点的空间矢量矩阵，在大视场中，会存在高阶失真项，有时候图像会包含大量的源，图像匹配更难。为此，本文提供一种更普遍的算法来实现大视场高阶项失真改正的天体测量方法，该算法在大视场图像中表现的更快更加稳健，而且需要的假设更少。<br>&gt;</p>
+<p>&emsp;&emsp; 在天文应用中一个更普遍的假设是$F<em>{R\rightarrow I}$是一个相似变换，比如旋转、放大等，$F</em>{R\rightarrow I} = \lambda A r + b$，矩阵 A 是正交矩阵的 $\lambda$倍，b 是平移转换，r 是点的空间矢量矩阵，在大视场中，会存在高阶失真项，有时候图像会包含大量的源，图像匹配更难。为此，本文提供一种更普遍的算法来实现大视场高阶项失真改正的天体测量方法，该算法在大视场图像中表现的更快更加稳健，而且需要的假设更少。<br>&gt;</p>
 <ul>
 <li>与线性项相比，失真是不可忽视的但较小</li>
 <li>在参考点和图像点之间存在平滑的转换</li>
 <li>点列表有相当多的共同来源</li>
 <li>转换是局部可逆的</li>
 </ul>
-<h2 id="对称点匹配"><a href="#对称点匹配" class="headerlink" title="对称点匹配"></a>对称点匹配</h2><p>首先假设 $ F<em>{R \rightarrow I} $ 已知，找到 $R$ 和 $I$ 之间的匹配点，应该首先将参考点转换到图像的参考框架中 $ R’ = F</em>{R \rightarrow I}(R) $, 然后就可以执行 $ R’ $ 和 $ I $ 的点匹配；<strong>$R’$中的一点在 $I$ 存在一个很接近的一点，就认为是一对匹配点</strong>。<br>&gt;</p>
+<h2 id="对称点匹配"><a href="#对称点匹配" class="headerlink" title="对称点匹配"></a>对称点匹配</h2><p>首先假设 $F<em>{R \rightarrow I}$ 已知，找到 $R$ 和 $I$ 之间的匹配点，应该首先将参考点转换到图像的参考框架中 $R’ = F</em>{R \rightarrow I}(R)$, 然后就可以执行 $ R’$ 和 $I$ 的点匹配；<strong>$R’$中的一点在 $I$ 存在一个很接近的一点，就认为是一对匹配点</strong>。<br>&gt;</p>
 <ul>
 <li><p>假设一维参考列表中有按升序排列的 N 个点(开始时使用快速排序法执行一次即可)，时间尺度为 $O(N log N)$ </p>
 </li>
 <li><p>关于二维点的列表，我们再次假设这些点是由它们的 x 坐标[初始排序 $O(N log N)$]以升序给出的，并且它们被均匀地分布在单位面积内。在 x 方向排序时间与一维一致，但两点间的欧几里得距离不一定最小，除了两点间距离的期望值是 $1/ \sqrt N$ 外，还需要在具有相同宽度和高度的条带内比较点，其时间尺度为 $O(\sqrt N)$,所以匹配两个二维目录的对称点需要的时间尺度为 $O(N^{3/2} log N)$。</p>
 </li>
 </ul>
-<h2 id="找到转换函数"><a href="#找到转换函数" class="headerlink" title="找到转换函数"></a>找到转换函数</h2><p><strong>任务是找到 $R$ 和 $I$ 之间的转换关系，该算法的第一步也是最重要的一步是找到基于三角匹配顶点的初始变换函数 $ F<em>{R \rightarrow I}^{(1)} $，使用该转换函数，完成对称点的匹配，进一步改善转换函数 $ F</em>{R \rightarrow I}^{(i)} $，即使用迭代的方法来改进，从而增加对称匹配点数</strong>。</p>
+<h2 id="找到转换函数"><a href="#找到转换函数" class="headerlink" title="找到转换函数"></a>找到转换函数</h2><p><strong>任务是找到 $R$ 和 $I$ 之间的转换关系，该算法的第一步也是最重要的一步是找到基于三角匹配顶点的初始变换函数 $F<em>{R \rightarrow I}^{(1)}$，使用该转换函数，完成对称点的匹配，进一步改善转换函数 $F</em>{R \rightarrow I}^{(i)}$，即使用迭代的方法来改进，从而增加对称匹配点数</strong>。</p>
 <h3 id="三角匹配"><a href="#三角匹配" class="headerlink" title="三角匹配"></a>三角匹配</h3><p>三角匹配法用于初始转换函数，函数 $F_{R \rightarrow I}$ 主导项是线性部分，所以在 $R$ 和 $I$ 之间的一阶近似存在一个放大尺度(除了旋转、比例尺和平移外)</p>
 <ol>
 <li><p>三角空间  </p>
 <ul>
-<li>定义归一化三角空间 $T^{min}$，其坐标对原始列表坐标的变换不明显，即所有的相似三角形可以由相同点表示，与比例尺无关。$$ T^{mix}<em>{x} = p/a \tag {1} $$ ，  $$ T^{mix}</em>{y} = q/a \tag {2} $$ a、p、q 是按降序排列的三角形边长。混合空间三角形的坐标是边长的连续函数，但确实方向信息。但对于大量的点和三角形来说，确定指向很可靠。</li>
-<li><p>chrial 空间三角形，$$T^{chir}<em>{x} = b/a \tag {3}$$ $$T^{chir}</em>{y} = c/a \tag {4}$$ ， a、b、c 为逆时针方向的三个边，a 为最长边。在这个空间中，具有不同指向的相似三角形是有不同的三角形，缺点是不连续。但可以定义既可以连续，又能保证比例尺的参数，首先沿着 $T<em>{x} + T</em>{y} = 1 $将三角形翻转，就可以将等边三角形移动到原点，接下来应用整个空间的径向放大率将$T<em>{x} + T</em>{y} = 1 $线沿着 $T<em>{x}^2 + T</em>{y}^2 = 1 $弧移动。</p>
+<li>定义归一化三角空间 $T^{min}$，其坐标对原始列表坐标的变换不明显，即所有的相似三角形可以由相同点表示，与比例尺无关。$$T^{mix}<em>{x} = p/a \tag {1}$$ ， $$T^{mix}</em>{y} = q/a \tag {2}$$ a、p、q 是按降序排列的三角形边长。混合空间三角形的坐标是边长的连续函数，但确实方向信息。但对于大量的点和三角形来说，确定指向很可靠。</li>
+<li><p>chrial 空间三角形，$$T^{chir}<em>{x} = b/a \tag {3}$$  $$T^{chir}</em>{y} = c/a \tag {4}$$， a、b、c 为逆时针方向的三个边，a 为最长边。在这个空间中，具有不同指向的相似三角形是有不同的三角形，缺点是不连续。但可以定义既可以连续，又能保证比例尺的参数，首先沿着 $T<em>{x} + T</em>{y} = 1$将三角形翻转，就可以将等边三角形移动到原点，接下来应用整个空间的径向放大率将 $T<em>{x} + T</em>{y} = 1$线沿着  $T<em>{x}^2 + T</em>{y}^2 = 1$弧移动。</p>
 </li>
 <li><p>continuous 空间三角形<strong>最佳三角形的大小由两个因素决定：大三角形的畸变和三角形参数的不确定性，小三角形的大小与顶点的天体测量误差相当</strong></p>
 </li>
@@ -373,7 +373,7 @@
 <ul>
 <li><p>首先存储和处理这么多的三角形是电脑无法完成的。</p>
 </li>
-<li><p>第二，完整列表中有很多不适合使用的三角形。比如在 $I$ 中的大三角形在 $R$ 中会有显著的扭曲现象，因此在三角空间中应该用不同的坐标系表示才合理。<strong>最佳三角形的大小由两个因素决定：大三角形的畸变和三角形参数的不确定性，小三角形的大小与顶点的天体测量误差相当</strong>。估计扭曲因子 $f_d$ 的值，$f_d \simeq |(sin d - tan d)/d| \simeq |1 - cos d | $, 该值为正交投影和日晷投影的差值，$d$ 为视场中心开始测量的径向距离。在 HATNet 中($d = D \simeq 6^{\circ}$ to the corners)，畸变效应在三角空间产生的误差为 $f<em>d L/D$，$L,D$ 分别为所选三角形的大小和图像的特征大小。最佳三角形的大小估计值为 $L</em>{opt} = \sqrt {\frac{\delta D}{f_d}},\delta \text{为天体测量的不准确值}$，在 HATNet 中 $D = 2048 , f<em>d = 0.005 , \delta = 0.01 , 得到最佳三角形大小为 L</em>{opt} \simeq 60 - 70 pixels $.</p>
+<li><p>第二，完整列表中有很多不适合使用的三角形。比如在 $I$ 中的大三角形在 $R$ 中会有显著的扭曲现象，因此在三角空间中应该用不同的坐标系表示才合理。<strong>最佳三角形的大小由两个因素决定：大三角形的畸变和三角形参数的不确定性，小三角形的大小与顶点的天体测量误差相当</strong>。估计扭曲因子 $f_d$ 的值，$f_d \simeq |(sin d - tan d)/d| \simeq |1 - cos d | $, 该值为正交投影和日晷投影的差值，$d$ 为视场中心开始测量的径向距离。在 HATNet 中($d = D \simeq 6^{\circ}$ to the corners)，畸变效应在三角空间产生的误差为 $f<em>d L/D$ , $L,D$分别为所选三角形的大小和图像的特征大小。最佳三角形的大小估计值为 $L</em>{opt} = \sqrt {\frac{\delta D}{f_d}},\delta 为天体测量的不准确值$，在 HATNet 中 $D = 2048 , f<em>d = 0.005 , \delta = 0.01 , 得到最佳三角形大小为 L</em>{opt} \simeq 60 - 70 pixels $.</p>
 </li>
 <li><p>第三，处理许多三角形可能会由于大量点导致产生过于饱和的三角形空间，并可能产生意想不到的三角形匹配</p>
 </li>
