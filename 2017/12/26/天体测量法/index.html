@@ -98,22 +98,22 @@
 
 
 
-<meta name="description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $ F{R \">
+<meta name="description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $F{R \r">
 <meta name="keywords" content="CCD 图像">
 <meta property="og:type" content="article">
 <meta property="og:title" content="天体测量法">
 <meta property="og:url" content="http://yoursite.com/2017/12/26/天体测量法/index.html">
 <meta property="og:site_name" content="BQGao的博客">
-<meta property="og:description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $ F{R \">
+<meta property="og:description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $F{R \r">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2017/12/26/天体测量法/15141075149905.jpg">
 <meta property="og:image" content="http://yoursite.com/2017/12/26/天体测量法/15141889472305.jpg">
 <meta property="og:image" content="http://yoursite.com/2017/12/26/天体测量法/15142717029444.jpg">
 <meta property="og:image" content="http://yoursite.com/2017/12/26/天体测量法/15142725484851.jpg">
-<meta property="og:updated_time" content="2017-12-26T11:31:22.000Z">
+<meta property="og:updated_time" content="2017-12-26T11:39:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="天体测量法">
-<meta name="twitter:description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $ F{R \">
+<meta name="twitter:description" content="天体测量法交叉匹配法找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点。  &amp;emsp;&amp;emsp; 在天文应用中一个更普遍的假设是 $F{R \r">
 <meta name="twitter:image" content="http://yoursite.com/2017/12/26/天体测量法/15141075149905.jpg">
 
 
@@ -340,7 +340,7 @@
         
           <h1 id="天体测量法"><a href="#天体测量法" class="headerlink" title="天体测量法"></a>天体测量法</h1><h2 id="交叉匹配法"><a href="#交叉匹配法" class="headerlink" title="交叉匹配法"></a>交叉匹配法</h2><p>找到一个图像中源像素坐标与另外一个天球坐标参考目录（或另一个观测图像的源像素坐标）的最佳几何匹配关系。标记参考列表为 $R$ ,图像列表为 $I$ ，两者之间的转换关系为 $F_{R \rightarrow I}$ 。<strong>为了找到匹配的点源对，需要知道转换函数，反之亦然，为了推导出转换函数，需要知道匹配点</strong>。</p>
 <hr>
-<p>&emsp;&emsp; 在天文应用中一个更普遍的假设是 $ F<em>{R \rightarrow I} $ 是一个相似变换，比如旋转、放大等，$ F</em>{R \rightarrow I}= \lambda A r + b $，矩阵 A 是正交矩阵的 $\lambda$ 倍，b 是平移转换，r 是点的空间矢量矩阵，在大视场中，会存在高阶失真项，有时候图像会包含大量的源，图像匹配更难。为此，本文提供一种更普遍的算法来实现大视场高阶项失真改正的天体测量方法，该算法在大视场图像中表现的更快更加稳健，而且需要的假设更少。<br>&gt;</p>
+<p>&emsp;&emsp; 在天文应用中一个更普遍的假设是 $F<em>{R \rightarrow I}$是一个相似变换，比如旋转、放大等，$ F</em>{R \rightarrow I}= \lambda A r + b $，矩阵 A 是正交矩阵的 $\lambda$ 倍，b 是平移转换，r 是点的空间矢量矩阵，在大视场中，会存在高阶失真项，有时候图像会包含大量的源，图像匹配更难。为此，本文提供一种更普遍的算法来实现大视场高阶项失真改正的天体测量方法，该算法在大视场图像中表现的更快更加稳健，而且需要的假设更少。<br>&gt;</p>
 <ul>
 <li>与线性项相比，失真是不可忽视的但较小</li>
 <li>在参考点和图像点之间存在平滑的转换</li>
